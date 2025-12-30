@@ -1,5 +1,6 @@
 import requests
 
+GROQ_API = "YOUR_API"
 
 def ask_ai(prompt):
     import requests
