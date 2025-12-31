@@ -1,6 +1,6 @@
 sen = ["Python is good", "Python is good python module", "hello world", "This is good"]
 user = input("Enter query: ")
-import os
+
 def searching_tool(keyword, lst):
     keyword = keyword.lower()
     user_lst = keyword.split(" ")
@@ -23,8 +23,4 @@ def searching_tool(keyword, lst):
             final_lst.append(key)
     return final_lst
 
-apps = os.listdir("C:/Users/yashd/OneDrive/Desktop")
-os.startfile("C:/Users/yashd/OneDrive/Desktop/Spotify.lnk")
-# func = lambda x: x if (".lnk" in x) else None
-# var = list(filter(lambda x: x if (".lnk" in x) else None, searching_tool(user, apps)))[0]
-# print(var)
+print(searching_tool(user, sen))
