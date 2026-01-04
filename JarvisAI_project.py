@@ -34,7 +34,7 @@ def playaudio(q):
     if q == "start":
         song = random.choice(os.listdir("C:/Users/yashd/PycharmProjects/PythonProject/music"))
         mixer.init()
-        mixer.music.load(f"music/{song}")
+        mixer.music.load(f"C:/Users/yashd/PycharmProjects/PythonProject/music/{song}")
         mixer.music.play()
     elif q == "pause":
         mixer.music.pause()
